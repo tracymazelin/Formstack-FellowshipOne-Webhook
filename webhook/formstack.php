@@ -359,7 +359,7 @@ class Formstack extends FellowshipOne{
 		$model = $this->fetchModel('contributionReceipts');
 		$model['contributionReceipt']['amount'] = $this->payment['amount'];
 		$model['contributionReceipt']['fund']['@id'] = $fundId;
-		$model['contributionReceipt']['person']['@id'] = $this->id['person'];//"40314300";
+		$model['contributionReceipt']['person']['@id'] = $this->id['person'];
 		$model['contributionReceipt']['contributionType']['@id'] = "3"; //credit card
 		$model['contributionReceipt']['receivedDate'] = $this->timestamp;
 
