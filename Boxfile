@@ -1,0 +1,11 @@
+web1:
+  app_name: 
+  php_version: 5.4.14
+  php_extensions:
+    - oauth
+    - curl
+    - mbstring
+  shared_writable_dirs:
+    - /logs
+
+  
