@@ -52,7 +52,7 @@ class Formstack extends FellowshipOne{
 	 * @return boolean 
 	 */
 	public function verifyHandshake(){
-		if (!isset($_POST['HandshakeKey']) || $_POST['HandshakeKey'] !== "cbcattxwebhook"){
+		if (!isset($_POST['HandshakeKey']) || $_POST['HandshakeKey'] !== "UseStringSetupInFormstack"){
 			error_log($this->timestamp.": Handshake failed. \n", 3, "logs/error.log");	
 			header('HTTP/1.0 403 Forbidden');
   			exit();
